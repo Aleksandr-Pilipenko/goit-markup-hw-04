@@ -16,6 +16,9 @@ html {
   --color-hero-futer-bng: #2f303a;
   --bng-section-team: #f5f4fa;
   --color-contact: rgba(255, 255, 255, 0.6);
+  --feature-bagraund: #f5f5fa;
+  --border-clients: #afb1b8;
+  --footer-logo-color: rgba(255, 255, 255, 0.1);
 }
 p,
 h1,
@@ -51,7 +54,7 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
 }
 .section {
   padding-top: 94px;
@@ -154,7 +157,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -163,19 +168,9 @@ body {
 .contact:focus {
   color: var(--accent-color);
 }
-.header-icon:hover,
-.header-icon:focus {
-  fill: var(--accent-color);
-}
-.header-icon {
-  fill: #757575;
-}
 
-.contact-container {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 10px;
+.header-icon {
+  fill: currentColor;
 }
 
 /* ----------------------------------------------hero------------------------------------ */
@@ -241,7 +236,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  background: #f5f5fa;
+  background: var(--feature-bagraund);
   border-radius: 4px;
   width: 270px;
   height: 120px;
@@ -377,7 +372,7 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--border-clients);
   border-radius: 4px;
 }
 .social-clients {
@@ -449,7 +444,7 @@ body {
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-logo-color);
   border-radius: 50%;
   justify-content: center;
   align-items: center;

@@ -13,12 +13,13 @@ html {
   --super-blask: #000000;
   --super-waite: #ffffff;
   --accent-btn: #188ce8;
-  --color-hero-futer-bng: #2f303a;
+  --color-hero-bng: #c4c4c4;
   --bng-section-team: #f5f4fa;
   --color-contact: rgba(255, 255, 255, 0.6);
   --feature-bagraund: #f5f5fa;
   --border-clients: #afb1b8;
   --footer-logo-color: rgba(255, 255, 255, 0.1);
+  --color-bng-footer: #2f303a;
 }
 p,
 h1,
@@ -179,13 +180,14 @@ body {
   padding-bottom: 200px;
 
   text-align: center;
-  background-color: var(--color-hero-futer-bng);
+  background-color: var(--color-hero-bng);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
-  background-position: centr;
+  background-position: center;
   background-size: cover;
-  min-width: 1600px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -292,7 +294,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 30px;
 }
 .team-link {
   display: flex;
@@ -308,7 +309,7 @@ body {
   background-color: var(--accent-color);
 }
 .team-link:hover .social-networks,
-.team-link:focus.social-networks {
+.team-link:focus .social-networks {
   fill: var(--super-waite);
 }
 
@@ -343,12 +344,13 @@ body {
 }
 .text {
   padding-top: 30px;
-  margin-bottom: 16px;
+  padding-bottom: 30px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 /* -------------------------clients----------------------------- */
@@ -379,11 +381,11 @@ body {
   fill: #afb1b8;
 }
 .clients-link:hover,
-.clients-link :focus {
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 .clients-link:hover .social-clients,
-.clients-link :focus .social-clients {
+.clients-link:focus .social-clients {
   fill: var(--accent-color);
 }
 
@@ -400,7 +402,7 @@ body {
 }
 
 .footer {
-  background-color: var(--color-hero-futer-bng);
+  background-color: var(--color-bng-footer);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -459,6 +461,7 @@ body {
 }
 
 .footer-soc-title {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -507,15 +510,17 @@ body {
 }
 .project-item {
   background-color: var(--super-waite);
-
-  /* width: 370px;
-  border: 1px solid #eeeeee; */
 }
-.project-item:hover,
-.project-item :focus {
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .item-portfolio {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
